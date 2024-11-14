@@ -26,7 +26,7 @@ const EditCar = () => {
         if (jwt) {
             try {
                 const response = await axios.put(
-                    `http://localhost:5070/api/updatecar/${id}`,
+                    `https://intern-backend-rndw.onrender.com/api/updatecar/${id}`,
                     carData,
                     {
                         headers: {
@@ -57,7 +57,7 @@ const EditCar = () => {
         e.preventDefault();
         if (jwt) {
             try {
-                const response = await axios.delete(`http://localhost:5070/api/deletecar/${id}`, {
+                const response = await axios.delete(`https://intern-backend-rndw.onrender.com/api/deletecar/${id}`, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${jwt}`,
