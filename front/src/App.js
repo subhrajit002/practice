@@ -19,11 +19,10 @@ function App() {
     <>
       {showNavbar && <Navbar jwt={jwt} />}
       <Routes>
-        
+       
         <Route path='/myCars' element={<MyCars />} />
         <Route path='/' element={<CarList />} />
-        
-        <Route path='/addCars' element={<AddCar />} />
+        <Route path='/addCar' element={<AddCar />} />
         <Route path='/signin' element={<Login />} />
         <Route path='/signup' element={<Register />} />
         <Route path='/cars/edit/:id' element={<EditCar />} />
