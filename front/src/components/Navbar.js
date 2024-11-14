@@ -10,7 +10,7 @@ import axios from 'axios';
 const navigation = [
     { name: 'All Cars', href: '/', current: false },
     { name: 'My Cars', href: '/myCars', current: false },
-   { name: 'Add Cars', href: '/addCars', current: false },
+    { name: 'Add Cars', href: '/addCar', current: false },
 ]
 
 function classNames(...classes) {
@@ -42,7 +42,7 @@ export default function Example({ jwt }) {
             if (!jwt) return;
             try {
                 const response = await axios.get(
-                    "https://practice-back-hzbp.onrender.com/api/profile",
+                    "https://front-9xlt.onrender.com/api/profile",
                     {
                         headers: {
                             Authorization: `Bearer ${jwt}`,
