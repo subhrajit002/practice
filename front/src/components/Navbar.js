@@ -10,7 +10,7 @@ import axios from 'axios';
 const navigation = [
     { name: 'All Cars', href: '/', current: false },
     { name: 'My Cars', href: '/myCars', current: false },
-   { name: 'Add Cars', href: '/addCar', current: false },
+   { name: 'Add Cars', href: '/addCars', current: false },
 ]
 
 function classNames(...classes) {
