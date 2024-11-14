@@ -50,8 +50,8 @@ const AddCar = () => {
                         },
                     }
                 );
-                if (response.status == 200) {
-                    Swal.fire("Destination added successfully", "", "success");
+                if (response.status === 200) {
+                    Swal.fire("Car added successfully", "", "success");
                     navigate('/myCars')
                 }
             } catch (error) {
@@ -207,7 +207,7 @@ const AddCar = () => {
                             type="submit"
                             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
-                            Save carData
+                            Save Car Data
                         </button>
                     </div>
                 </form>
