@@ -18,7 +18,7 @@ const CarList = () => {
     useEffect(() => {
         const allCars = async () => {
             try {
-                const response = await axios.get('https://practice-back-hzbp.onrender.com/api/usercar', {
+                const response = await axios.get('https://front-9xlt.onrender.com/api/usercar', {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${jwt}`,
