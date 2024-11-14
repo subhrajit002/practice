@@ -18,7 +18,7 @@ const CarList = () => {
     useEffect(() => {
         const allCars = async () => {
             try {
-                const response = await axios.get('http://localhost:5070/api/usercar', {
+                const response = await axios.get('https://intern-backend-rndw.onrender.com/api/usercar', {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${jwt}`,
