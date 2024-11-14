@@ -30,6 +30,7 @@ const Register = () => {
                     "Content-Type": "application/json",
                 }
             );
+            console.log("register", response)
             if (response.status === 201) {
                 Swal.fire("Registered Successfully", "", "success").then((result) => {
                     if (
@@ -66,7 +67,7 @@ const Register = () => {
                     onSubmit={handleSubmit}
                     className="sm:p-10 p-5 rounded-2xl shadow-lg hover:shadow-xl lg:w-[28rem] md:w-[20rem]  mt-8 xl:ml-5 py-3"
                 >
-                    
+
                     <div className="mb-6">
                         <label
                             htmlFor="firstName"
@@ -155,7 +156,7 @@ const Register = () => {
                         <Link to="/signin" className="font-medium text-indigo-600 hover:text-indigo-500">
                             Already have an account? Sign in
                         </Link>
-                    </div> 
+                    </div>
                 </form>
 
             </div>
