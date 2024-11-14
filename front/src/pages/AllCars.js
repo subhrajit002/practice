@@ -17,7 +17,7 @@ const CarList = () => {
     useEffect(() => {
         const allCars = async () => {
             try {
-                const response = await axios.get('https://intern-backend-rndw.onrender.com/api/allcar');
+                const response = await axios.get('https://practice-back-hzbp.onrender.com/api/addcar/api/allcar');
                 setCars(response.data);
                 console.log("all cars", response.data);
             } catch (error) {
