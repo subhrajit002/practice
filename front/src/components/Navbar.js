@@ -42,7 +42,7 @@ export default function Example({ jwt }) {
             if (!jwt) return;
             try {
                 const response = await axios.get(
-                    "https://front-9xlt.onrender.com/api/profile",
+                    "https://practice-back-hzbp.onrender.com/api/profile",
                     {
                         headers: {
                             Authorization: `Bearer ${jwt}`,
