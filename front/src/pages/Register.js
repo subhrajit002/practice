@@ -24,7 +24,7 @@ const Register = () => {
         event.preventDefault();
         try {
             let response = await axios.post(
-                "https://intern-backend-rndw.onrender.com/auth/register",
+                "https://practice-back-hzbp.onrender.com/auth/register",
                 values,
                 {
                     "Content-Type": "application/json",
