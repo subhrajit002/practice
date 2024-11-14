@@ -41,7 +41,7 @@ const AddCar = () => {
         if (jwt) {
             try {
                 const response = await axios.post(
-                    "https://intern-backend-rndw.onrender.com/api/addcar",
+                    "https://practice-back-hzbp.onrender.com/api/addcar",
                     carData,
                     {
                         headers: {
