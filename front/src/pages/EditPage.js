@@ -26,7 +26,7 @@ const EditCar = () => {
         if (jwt) {
             try {
                 const response = await axios.put(
-                    `https://practice-back-hzbp.onrender.com/api/updatecar/${id}`,
+                    `https://front-9xlt.onrender.com/api/updatecar/${id}`,
                     carData,
                     {
                         headers: {
@@ -57,7 +57,7 @@ const EditCar = () => {
         e.preventDefault();
         if (jwt) {
             try {
-                const response = await axios.delete(`https://practice-back-hzbp.onrender.com/api/deletecar/${id}`, {
+                const response = await axios.delete(`https://front-9xlt.onrender.com/api/deletecar/${id}`, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${jwt}`,
