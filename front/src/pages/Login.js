@@ -27,7 +27,7 @@ const Login = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "https://front-9xlt.onrender.com/auth/login",
+                "https://practice-back-hzbp.onrender.com/auth/login",
                 value,
                 {
                     headers: {
