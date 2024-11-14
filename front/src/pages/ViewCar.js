@@ -13,7 +13,7 @@ const CarView = () => {
     useEffect(() => {
         const fetchCar = async () => {
             try {
-                const response = await axios.get(`https://intern-backend-rndw.onrender.com/api/getCar/${id}`);
+                const response = await axios.get(`https://practice-back-hzbp.onrender.com/api/getCar/${id}`);
                 setCar(response.data);
                 console.log(response.data);
             } catch (err) {
