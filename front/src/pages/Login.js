@@ -27,7 +27,7 @@ const Login = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5070/auth/login",
+                "https://intern-backend-rndw.onrender.com/auth/login",
                 value,
                 {
                     headers: {
